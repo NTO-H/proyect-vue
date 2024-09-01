@@ -1,17 +1,27 @@
 <template>
-  <img class="imagenpex" alt="Vue logo" src="./assets/pez1.png">
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+
+  <HeaderComponent />
+  <main>
+
+  </main>
+
+
+  <FooterComponent />
+
+
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
+import HelloWorld from './views/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    HeaderComponent, FooterComponent
   }
 }
 </script>
@@ -23,18 +33,21 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #1b61a8;
-  margin-top: 60px;
+
+  /* margin-top: 60px; */
 
 
 }
+
 .imagenpex {
-    filter: drop-shadow(30px 10px 15px #0707077e) contrast(130%);
+  filter: drop-shadow(30px 10px 15px #0707077e) contrast(130%);
 }
 
 
 
-body{
-
-background: linear-gradient(225deg, #18011e 0%, #101d44 100%);
+body {
+  padding: 0%;
+  margin: 0%;
+  /* background: linear-gradient(225deg, #18011e 0%, #101d44 100%); */
 }
 </style>

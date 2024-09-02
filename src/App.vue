@@ -2,25 +2,21 @@
 
   <HeaderComponent />
   <main>
-
+    <HomeView msg="Welcome to Your Vue.js App" />
   </main>
-
-
   <FooterComponent />
-
-
-  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-import HelloWorld from './views/Home.vue'
+import HomeView from './views/Home.vue'
+// import Acerca from './views/Acerca.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HomeView,
     HeaderComponent, FooterComponent
   }
 }
